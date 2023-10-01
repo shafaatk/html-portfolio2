@@ -1,0 +1,260 @@
+body {
+    margin: 0%;
+    font-family: 'Lato', sans-serif;
+    color: #043525;
+}
+
+.top-container {
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(100, 203, 121);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #043525;
+}
+
+nav ul a:hover {
+    color: #7b7b7b;
+    font-size: 1.03rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.title-text {
+    text-align: center;
+
+    margin-bottom: 150px;
+
+}
+
+.title-text-image {
+    height: 400px;
+    margin-top: -20px;
+}
+
+h1 {
+    color: #043525;
+    font-family: 'Lato', sans-serif;
+    font-size: 5rem;
+
+}
+
+.title-h2 {
+    color: #40a133;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+.developer {
+    text-decoration: underline;
+    color: #043525;
+}
+
+.profile-pic {
+    float: right;
+    height: 350px;
+    margin-right: 100px;
+    border: 2px solid #40a133;
+}
+
+.profile-pic-text {
+    margin-left: 120px;
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.line {
+    border: 0;
+    height: 1px;
+
+    margin-top: -100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #40a133;
+}
+
+.common-h2 {
+    margin-left: 120px;
+    font-size: 40px
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project {
+    height: 300px;
+    width: 400px;
+    border: 2px solid green;
+
+}
+
+.p1 {
+    height: 300px;
+    width: 400px;
+}
+
+.space {
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #043525;
+    height: 100px;
+    width: 100%;
+}
+
+.logos {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-us-text {
+    margin-left: 120px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.c-button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    background-color: #043525;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.c-button:hover {
+    background-color: #06442f;
+
+}
+
+@media(max-width: 681px) {
+
+    /* Adjust the font size for better readability on small screens */
+    .title-text h1 {
+        font-size: 3rem;
+        /* Adjust as needed */
+    }
+
+    .title-h2 {
+        font-size: 2rem;
+        /* Adjust as needed */
+    }
+
+    /* Center-align the title text image */
+    .title-text-image {
+        height: 250px;
+        margin: 20px auto;
+        /* Center-align the image */
+    }
+
+    /* Adjust the margin for the common-h2 element */
+    .common-h2 {
+        margin-left: 0;
+        /* Remove the left margin */
+        text-align: center;
+        /* Center-align the text */
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Adjust the width and alignment of the profile picture and text */
+    .profile-pic {
+        float: none;
+        /* Remove the float */
+        margin: 0 auto;
+        /* Center-align the image */
+        height: auto;
+        width: 50%;
+    }
+
+    .profile-pic-text {
+        margin: 0 auto;
+        /* Center-align the text */
+        width: 70%;
+        /* Adjust the width as needed */
+        text-align: left;
+        /* Center-align the text */
+        font-size: 1rem;
+        /* Adjust the font size as needed */
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        /* Stack projects vertically */
+        align-items: center;
+        /* Center-align projects horizontally */
+        gap: 50px;
+    }
+
+
+
+    /* Center-align the project images and keep them inside the border */
+    .project {
+
+        height: 300px;
+        width: 80%;
+        /* Adjust the width as needed */
+        border: 2px solid green;
+        margin: 20px auto;
+        /* Center-align the project */
+    }
+
+    .p1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Center-align the contact-us text and button */
+    .contact-us-text {
+        margin-left: 0;
+        /* Remove the left margin */
+        text-align: center;
+        /* Center-align the text */
+        font-size: 1rem;
+        /* Adjust the font size as needed */
+    }
+
+    .c-button {
+        margin: 10px auto;
+        /* Center-align the button */
+        display: block;
+        /* Make the button a block element */
+        font-size: 1rem;
+        /* Adjust the font size as needed */
+    }
+
+}
